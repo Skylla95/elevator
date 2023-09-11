@@ -78,15 +78,11 @@ function App() {
     for (let i = 0; i <= BUILDING_HEIGHT; i++) {
       elevatorFloors.push(
         <div className="floor" key={i} style={{ display: "flex" }}>
-          <span
-            style={{ height: "fit-content", background: "blue", width: "100%" }}
-          >
+          <span style={{ height: "2vh", background: "blue", width: "100%" }}>
             {" "}
             {elevator1 === 0 ? "P" : elevator1}{" "}
           </span>
-          <span
-            style={{ height: "fit-content", background: "blue", width: "100%" }}
-          >
+          <span style={{ height: "2vh", background: "blue", width: "100%" }}>
             {" "}
             {elevator1state}
           </span>
@@ -100,14 +96,10 @@ function App() {
     for (let i = 0; i <= BUILDING_HEIGHT; i++) {
       elevatorFloors.push(
         <div className="floor" key={i} style={{ display: "flex" }}>
-          <span
-            style={{ height: "fit-content", background: "blue", width: "100%" }}
-          >
+          <span style={{ height: "2vh", background: "blue", width: "100%" }}>
             {elevator2 === 0 ? "P" : elevator2}{" "}
           </span>
-          <span
-            style={{ height: "fit-content", background: "blue", width: "100%" }}
-          >
+          <span style={{ height: "2vh", background: "blue", width: "100%" }}>
             {elevator2state}
           </span>
         </div>
@@ -124,8 +116,8 @@ function App() {
           onClick={() => sendElevator1ToFloor(i)}
           key={i}
           style={{
-            width: "16px",
-            height: "16px",
+            width: "14px",
+            height: "14px",
             fontSize: "8px",
             borderRadius: "50%",
             background: "#555555",
@@ -146,8 +138,8 @@ function App() {
           onClick={() => sendElevator2ToFloor(i)}
           key={i}
           style={{
-            width: "16px",
-            height: "16px",
+            width: "14px",
+            height: "14px",
             fontSize: "8px",
             borderRadius: "50%",
             background: "#555555",
